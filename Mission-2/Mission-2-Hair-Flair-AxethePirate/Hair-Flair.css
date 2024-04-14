@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  min-height: 100vh;
+  background: whitesmoke;
+}
+
+.container h1 {
+  background-image: url("header-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 220px;
+  font-size: 80px;
+  font-family: Classica One;
+  font-weight: bold;
+  word-spacing: 100px;
+  letter-spacing: 8px;
+  padding: 20px 10px;
+  color: whitesmoke;
+  text-shadow: 10px goldenrod;
+  text-align: center;
+}
+
+
+.container .services {
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  background: #f0f0f0;
+  padding: 20px;
+  box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.container .services h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.container .services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container .services li {
+  margin-bottom: 10px;
+}
+
+.container .services input {
+  margin-right: 20px;
+}
+
+
+.textarea {
+display: flex;
+}
+
+.container .image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 10px;
+  height: 100%;
+  width: 40%;
+  border: 10px solid silver;
+  box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.container .image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.2s linear;
+  transform: scale(1.1);
+}
+
+.container .popup-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+
+.container .popup-image span {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.container .popup-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid white;
+  border-radius: 5px;
+  max-width: 95%;
+  max-height: 95%;
+}
+
+@media (max-width: 768px) {
+  .container .popup-image img {
+    width: 95%;
+  }
+}
+
+.container .services select {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.container .services button {
+  margin-top: 10px;
+}

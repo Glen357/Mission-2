@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="Hair-Flair.css" />
+  <script src="Hair-Flair.js" defer></script>
+  <title>Hair Flair</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Hair Flair</h1>
+
+    <div class="services">
+      <h2>Haircuts</h2>
+      <ul id="haircutList">
+        <li><input type="checkbox" value="23.00">Treatment $23.00 30min</li>
+        <li><input type="checkbox" value="20.40">Gold card Men's $20.40 30min</li>
+        <li><input type="checkbox" value="12.00">Clipper cut $12.00 15min</li>
+        <li><input type="checkbox" value="35.40">Gold card Women's $35.40 30min</li>
+        <li><input type="checkbox" value="24.00">Men's $24 30min</li>
+        <li><input type="checkbox" value="60.00">Ladies was, cut, blow, wave $60.00 1hr</li>
+        <li><input type="checkbox" value="48.00">Ladies wash and cut $48.00 45min</li>
+        <li><input type="checkbox" value="18.00">Primary School age $18.00</li>
+        <li><input type="checkbox" value="24.00">12-17 Years old $24.00 30min</li>
+      </ul>
+<hr/>
+      <h2>Colour Services</h2>
+      <ul id="colourList">
+        <li><input type="checkbox" value="225.00">Full head foils (Long Hair) $225.00 2hr 30min</li>
+        <li><input type="checkbox" value="168.00">Full head foils (Short Hair) $168.00 2hr</li>
+        <li><input type="checkbox" value="168.00">Regrowth touch up (Long Hair) $168.00 2hr</li>
+        <li><input type="checkbox" value="162.00">Regrowth touch up (short Hair) $162.00 1hr 30min</li>
+      </ul>
+<hr/>
+      <h2>Sets</h2>
+      <ul id="setsList">
+        <li><input type="checkbox" value="25.00">Set $25.00 45min</li>
+      </ul>
+<hr/>
+      <h2>Perms</h2>
+      <ul id="permsList">
+        <li><input type="checkbox" value="122.40">Perms $122.40 2hr</li>
+      </ul>
+<hr/>
+      <h2 id="Appointments">Book an Appointment</h2>
+        <button onclick="calculateTotal()">Calculate Total</button>
+        <p id="totalPrice">Total Price: $0.00</p>
+
+        <form id="details"  action="mailto:HairFlair@Somewhere" method="post">
+          <div>
+              <label for="Name">Name</label>
+              <input id="Name" type="text">
+          </div>
+          <div>
+              <label for="email">Email</label>
+              <input id="email" type="text">
+          </div>
+          
+          <div id="Phone Number">
+              <label for="contact phone number">Contact phone number</label>
+              <textarea id="contact phone number" rows="1" placeholder="Your Phone Number"></textarea>
+          </div>
+          <div>
+              <input type="checkbox" id="stay in touch">Sign up for specials
+          </div>
+          <button type="submit">Book now</button>
+      </form>
+
+    </div>
+
+    <div class="image-container">
+      <div class="image1"><img src="in-store-hair-wash.jpeg" alt="" /></div>
+      <div class="image3"><img src="Complimentary-coffee.jpeg" alt="" /></div>
+      <div class="image2"><img src="Kristi-cutting.jpeg" alt="" /></div>
+      <div class="image4"><img src="Lolly-jar.jpeg" alt="" /></div>
+      
+    </div>
+
+    <div>
+      <div class="popup-image">
+        <span>&times;</span>
+        <img src="in-store-hair-wash.jpeg" alt="" />
+      </div>
+    </div>
+  </div>
+      
+      
+    </div>
+  </div>
+
+</body>
+</html>
