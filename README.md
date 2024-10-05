@@ -19,7 +19,7 @@ Hair-Flair.js: JavaScript file for handling the service price calculations.
 
 Installation
 Clone the repository:
-git clone https://github.com/YourUsername/Hair-Flair.git
+git clone https://github.com/Glen357/Mission-2.git
 
 Open Hair-Flair.html with live server
 
